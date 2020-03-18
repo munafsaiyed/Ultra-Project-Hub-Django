@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            File Demo
+        </title>
+    </head>
+    <body>
+        <h1>File Demo</h1>
+        <P</P>
+        <br>
+        <form id="myform" method="POST" action="/fileupload/" 
+      enctype="multipart/form-data">
+        {% csrf_token %}
+    <input type="file" name="myfile">
+    <input type="submit"> 
+</form>
+        <br>
+        <br>
+        <a href="/logout/">Log Out</a>
+    </body>
+</html>

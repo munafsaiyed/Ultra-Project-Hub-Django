@@ -1,0 +1,536 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Digital Business Category Flat Bootstrap Responsive Web Template | Contact :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Digital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<style>
+.mm{
+	cursor: pointer;
+}
+
+.mm:hover{
+	background-color: blueviolet;
+	cursor: pointer;
+}
+</style>
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+<script>
+	function myFunctionhide() {
+	  var x = document.getElementById("myDIV");
+	  var y = document.getElementById("myDIV1");
+	  var z = document.getElementById("radiolabel1");
+	  var z1 = document.getElementById("radiolabel2");
+	  var z2 = document.getElementById("customisedivhr");
+	  if (x.style.display === "none") {
+		z.style.backgroundColor = "blueviolet";
+		z1.style.backgroundColor = "";
+		x.style.display = "block";
+		y.style.display = "none";
+		z2.style.display = "none";
+	  } else {
+		x.style.display = "none";
+		y.style.display = "none";
+	  }
+	}
+	function myFunctionhid() {
+	  var y = document.getElementById("myDIV1");
+	  var x = document.getElementById("myDIV");
+	  var z = document.getElementById("radiolabel1");
+	  var z1 = document.getElementById("radiolabel2");
+	  var z2 = document.getElementById("customisedivpro");
+	  if (y.style.display === "none") {
+	  	z.style.backgroundColor = "";
+		z1.style.backgroundColor = "blueviolet";
+		y.style.display = "block";
+		x.style.display = "none";
+		z2.style.display = "none";
+	  } else {
+		y.style.display = "none";
+		x.style.display = "none";
+	  }
+	}
+	function functionchr() {
+		var y = document.getElementById("customisedivhr");
+		var sel = document.getElementById("cu").value;
+		
+		if (sel == "customhr"){
+			
+			
+			if (y.style.display === "none") {
+			
+				y.style.display = "block";
+				//x.style.display = "none"
+			} else {
+				y.style.display = "none";
+				//x.style.display = "none";
+			}
+		}else{
+			y.style.display = "none";
+		}
+		
+	}
+	function functionpro() {
+		var y = document.getElementById("customisedivpro");
+		var sel = document.getElementById("cu1").value;
+		
+		if (sel == "custompro"){
+			
+			
+			if (y.style.display === "none") {
+			
+				y.style.display = "block";
+				//x.style.display = "none"
+			} else {
+				y.style.display = "none";
+				//x.style.display = "none";
+			}
+		}
+		else{
+			y.style.display = "none";
+		}
+	}
+	</script>	
+    <!-- css files -->
+    <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="{% static 'css/style.css' %}" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	
+	<!-- google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+   
+<!-- //header -->
+<header class="py-4">
+	<div class="container" >
+			<div id="logo">
+				<h1> <a href="/index/"><span class="fa fa-cloud" aria-hidden="true"></span> Digital</a></h1>
+			</div>
+		<!-- nav -->
+		<nav class="d-lg-flex">
+
+			<label for="drop" class="toggle"><span class="fa fa-bars" aria-hidden="true"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu mt-2 ml-auto">
+				<li class=""><a href="/index/">Home</a></li>
+				<li class=""><a href="#about">About</a></li>
+				<li class="">
+				<!-- First Tier Drop Down -->
+				<label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+				<a href="#">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+				<input type="checkbox" id="drop-2"/>
+				<ul class="inner-ul">
+					<li><a href="#process">Marketing Process</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#partners">Partners</a></li>
+				</ul>
+				</li>
+				<li class=""><a href="/team/">Team Page</a></li>
+				<li class=""><a href="/contact/">Contact Page</a></li>
+			</ul>
+			{% if request.session.username %}
+			<div class="login-icon ml-lg-2">
+					<a class="user" href="/cliindex/"> Dashboard</a>
+			</div>
+			{% else %}
+			<div class="login-icon ml-lg-2">
+				<a class="user" href="#popup5"> Login</a>
+			</div>
+			<div class="login-icon ml-lg-2">
+				<a class="user" href="/admin_login/"> Admin</a>
+			</div>
+			{% endif %}
+			
+		</nav>
+		<div class="clear"></div>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+   
+<!-- banner -->
+<div class="banner inner-banner" id="home" style="height: 100px;">
+	<div class="container" >
+
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- Contact page -->
+<section class="contact py-5 my-lg-5">
+	<div class="container">
+		<h2 class="heading mb-sm-5 mb-4">Tell us what you need done</h2>
+		<div class="contact_information">
+			
+		<!--	<div class="col-md-6 mt-md-0 mt-4">-->
+				<div class="contact_right p-lg-5 p-4">
+					<form action="/projectin/" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						<div class="w3_agileits_contact_left">
+                            <h3 class="mb-3">Choose a name for your project</h3>
+							<input type="text" name="projectname" placeholder="e.g. Build me a website" required="">
+                            <br><br>
+                            <h3 class="mb-3">Tell us more about your project</h3>
+                            <h8 class="mb-3">Start with a bit about yourself or your business, and include an overview of what you need done.</h8>
+                            <textarea type="text" name="projectdesc" placeholder="Describe your project here..." required=""></textarea>
+                            <br><br>
+                            <label for="files" class="btn" style="
+                            background:#03A595;
+                            color: #fff;
+                            min-height: 35px;
+                            padding: 10px;
+                            border: none;
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            width: 170px;
+                            ">Select Files</label>
+                            <input type="file" name="pfile" id="files" style="
+                           display: none;">
+                            <span style="padding-left: 100px;">Upload any Images or documents that might be helpful in explaning your project brief here.</span>
+							<br><br>
+							<div>
+								<h3 class="mb-3">What skills are required?</h3>
+								Enter up to 5 skills that best describe your project. Freelancers will use these skills to find projects they are most interested and experienced in.
+								<br><br>
+								<input type="text" name="skill" placeholder="What skills are required?" required="">
+							</div>
+							<br><br>
+<!-- option how do you want to pay start -->
+							<div>
+								<h3 class="mb-3">How do you want to pay?</h3>
+							</div>
+							<div style="display: -webkit-inline-flex;">
+							<label for="radio1" style="cursor: pointer;" id="radiolabel1" class="mm">
+								<div class="col-lg-12 col-sm-6" >
+									<div class="f1 icon1 p-4" style="border: solid;color: blueviolet;">
+										<div class="icon">
+											<span class="fa fa-bandcamp"></span>
+										</div>
+											<h3 class="my-3">Pay fixed price</h3>
+											<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper.</p>
+									</div>
+								</div>						
+							</label>
+							<input type="radio" onclick="myFunctionhide()" id="radio1" style="visibility: hidden;" name="projtype" value="fix"/>
+							<label for="radio2" style="cursor: pointer;" id="radiolabel2" class="mm">
+								<div class="col-lg-12 col-sm-6 mt-sm-0 mt-4">
+									<div class="f1 icon2 p-4" style="border: solid;color: blueviolet;">
+										<div class="icon">
+											<span class="fa fa-codepen"></span>
+										</div>												
+										<h3 class="my-3">Pay by the hour</h3>
+											<p>Excepteur sint occaecat non proident, sunt in culpa quis. Phasellus lacinia id erat eu ullamcorper.</p>
+										</div>
+								</div>
+								
+							</label>
+						<input type="radio" id="radio2" onclick="myFunctionhid()" style="visibility: hidden;" name="projtype" value="perhr"/>
+						</div>
+						<br>
+						<br>
+<!-- option how do you want to pay start -->
+<!-- option estimte list option start -->
+<div id="myDIV" style="display: none">
+						<div>
+							<h3 class="mb-3">How do you want to pay?</h3>
+						</div>
+						<div for="cur1" >
+								<select id="cur1" class="custom-select" style="width: 150px;" name="currencypro">
+								  <option value="AUD">AUD</option1>
+								  <option value="CAD">CAD</option>
+								  <option value="EUR">EUR</option>
+								  <option value="GBP">GBP</option>
+								  <option value="HKD">HKD</option>
+								  <option value="INR" selected="selected">INR</option>
+								  <option value="NZD">NZD</option>
+								  <option value="SGD">SGD</option>
+								  <option value="USD">USD</option>
+								  
+								</select>
+
+								<select id="cu1" class="custom-select" onchange="functionpro()" style="margin:30px; width: 400px;" name="pricepro">
+									<option value="600-1500">Micro Project (₹600 - 1500 INR)</option1>
+									<option value="1500-12500">Simple Project (₹1500 - 12500 INR)</option>
+									<option value="12500-37500">Very small Project (₹12500 - 37500 INR)</option>
+									<option value="37500-75000">Small Project (₹37500 - 75000 INR)</option>
+									<option value="75000-150000">Medium Project (₹75000 - 150000 INR)</option>
+									<option value="150000-250000">Large Project (₹150000 - 250000 INR)</option>
+									<option value="250000-500000">Larger Project (₹250000 - 500000 INR)</option>
+									<option value="500000-1000000">Very Large Project (₹500000 - 1000000 INR)</option>
+									<option value="1000000-2500000">Huge Project (₹1000000 - 2500000 INR)</option>
+									<option value="custompro">Customize budget</option>
+									
+								  </select>
+							  </div>
+
+</div>
+<div id="myDIV1" style="display: none">
+	<div>
+		<h3 class="mb-3">How do you want to pay?</h3>
+	</div>
+	<div for="cur" >
+			<select id="cur" class="custom-select" style="width: 150px;" name="currencyhr">
+			  <option value="AUD">AUD</option1>
+			  <option value="CAD">CAD</option>
+			  <option value="EUR">EUR</option>
+			  <option value="GBP">GBP</option>
+			  <option value="HKD">HKD</option>
+			  <option value="INR" selected="selected">INR</option>
+			  <option value="NZD">NZD</option>
+			  <option value="SGD">SGD</option>
+			  <option value="USD">USD</option>
+			  
+			</select>
+
+			<select id="cu" class="custom-select" onchange="functionchr();" style="margin:30px; width: 400px;" name="pricehr">
+				<option value="100-400">Basic (₹100 - 400 INR)</option1>
+				<option value="400-750">Moderate (₹400 - 750 INR)</option>
+				<option value="750-1250">Standard (₹750 - 1250 INR)</option>
+				<option value="1250-2500">Skilled (₹1250 - 2500 INR)</option>
+				<option value="2500-10000">Expert (₹2500 + INR)</option>
+				<option value="customhr">Customize budget</option>
+				
+			  </select>
+		  </div>
+
+</div>
+<div id="customisedivhr" style="display: none;">
+	<div>
+		<h6 class="mb-6"><b>Minimum Budget</b></h6>
+		
+		<div style="display: flex;margin-top: 10px;">
+			<span class="col-lg-1 col-sm-6" style="width: 100px;background-color: #eee; text-align: center;line-height: 1;border-top-left-radius: 3px; border-bottom-left-radius: 3px; box-sizing: border-box; padding-top: 9px; padding-bottom: 9px;color: #767676;border: 1px solid #BEC0C2; display: table-cell;" type="" name="" id="" value="INR">
+					₹
+			</span>
+			<input type="number" style="display: table-cell; line-height: 1.43; background: #fff; border: 1px solid #BEC0C2; box-shadow: 0 0 0 1px transparent; color: #1f2836; transition: all .1s linear; overflow: visible; width: 304;padding-left: 16px;" name="minhr" id="" placeholder="100"/>
+			<span class="col-lg-2 col-sm-2 mb-6" style="width: 50px;background-color: #eee; text-align: center;line-height: 1;border-top-right-radius: 3px; border-bottom-right-radius: 3px; box-sizing: border-box; padding-top: 9px; padding-bottom: 9px;color: #767676;border: 1px solid #BEC0C2; display: table-cell;" type="" name="" id="" value="per hour">
+				per hour
+			</span>
+		</div>
+	</div>
+	
+	<div style="margin-top: 20px;">
+			<h6 class="mb-6"><b>Maximum Budget</b></h6>
+			
+			<div style="display: flex;margin-top: 10px;">
+				<span class="col-lg-1 col-sm-6" style="width: 100px;background-color: #eee; text-align: center;line-height: 1;border-top-left-radius: 3px; border-bottom-left-radius: 3px; box-sizing: border-box; padding-top: 9px; padding-bottom: 9px;color: #767676;border: 1px solid #BEC0C2; display: table-cell;" type="" name="maxhr" id="" value="INR">
+						₹
+				</span>
+				<input type="number" style="display: table-cell; line-height: 1.43; background: #fff; border: 1px solid #BEC0C2; box-shadow: 0 0 0 1px transparent; color: #1f2836; transition: all .1s linear; overflow: visible; width: 304;padding-left: 16px;" name="maxhr" id="" placeholder="400"/>
+				<span class="col-lg-2 col-sm-2 mb-6" style="width: 50px;background-color: #eee; text-align: center;line-height: 1;border-top-right-radius: 3px; border-bottom-right-radius: 3px; box-sizing: border-box; padding-top: 9px; padding-bottom: 9px;color: #767676;border: 1px solid #BEC0C2; display: table-cell;" type="" name="" id="" value="per hour">
+					per hour
+				</span>
+			</div>
+		</div>
+</div>
+<div id="customisedivpro" style="display: none;">
+		<div>
+			<h6 class="mb-6"><b>Minimum Budget</b></h6>
+			
+			<div style="display: flex;margin-top: 10px;">
+				<span class="col-lg-1 col-sm-6" style="width: 100px;background-color: #eee; text-align: center;line-height: 1;border-top-left-radius: 3px; border-bottom-left-radius: 3px; box-sizing: border-box; padding-top: 9px; padding-bottom: 9px;color: #767676;border: 1px solid #BEC0C2; display: table-cell;" type="" name="" id="" value="INR">
+						₹
+				</span>
+				<input type="number" style="display: table-cell; line-height: 1.43; background: #fff; border: 1px solid #BEC0C2; box-shadow: 0 0 0 1px transparent; color: #1f2836; transition: all .1s linear; overflow: visible; width: 304;padding-left: 16px;" name="minpro" id="" placeholder="600"/>
+				
+			</div>
+		</div>
+		
+		<div style="margin-top: 20px;">
+				<h6 class="mb-6"><b>Maximum Budget</b></h6>
+				
+				<div style="display: flex;margin-top: 10px;">
+					<span class="col-lg-1 col-sm-6" style="width: 100px;background-color: #eee; text-align: center;line-height: 1;border-top-left-radius: 3px; border-bottom-left-radius: 3px; box-sizing: border-box; padding-top: 9px; padding-bottom: 9px;color: #767676;border: 1px solid #BEC0C2; display: table-cell;" type="" name="" id="" value="INR">
+							₹
+					</span>
+					<input type="number" style="display: table-cell; line-height: 1.43; background: #fff; border: 1px solid #BEC0C2; box-shadow: 0 0 0 1px transparent; color: #1f2836; transition: all .1s linear; overflow: visible; width: 304;padding-left: 16px;" name="maxpro" id="" placeholder="1500"/>
+					
+				</div>
+			</div>
+	</div>
+							<div class="w3_agileits_contact_right" >
+								<button type="submit" style="width: 100px; margin-left:900px; border-bottom-right-radius: 10px; border-top-right-radius: 10px;">
+									Submit
+								</button>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</form>
+				</div>
+			<!--</div> -->
+			
+		</div>
+	</div>
+</section>
+<!-- //Contact page -->
+
+<!-- footer -->
+<footer class="footer-emp-w3ls py-5">
+	<div class="container pt-lg-3">
+		<div class="row footer-top">
+			<div class="col-lg-4 col-sm-6 footer-grid-wthree">
+				<h4 class="footer-title text-uppercase mb-4">Who We Are</h4>
+				<div class="contact-info">
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium ipsum doloremque elit laudantium, totam rem
+						aperiam, eaque ipsa quae. Excepteur ut occaecat proident, sunt voluptatem et accusantium doloremque elit dolor.</p>
+					<h4 class="mt-3">Trusted by more than 1000+ people</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-sm-0 mt-4">
+				<h3 class="footer-title text-uppercase mb-4">Latest News</h3>
+				<div class="contact-info">
+					<div class="footer-style-w3ls">
+						<h4 class="mb-2"><span class="fa mr-1 fa-twitter"></span> Sed ut piciatis unde natus</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit volupta....</p>
+						<p class="date">23 Nov 2018.</p>
+					</div>
+					<div class="footer-style-w3ls mt-3">
+						<h4 class="mb-2"><span class="fa mr-1 fa-twitter"></span> Modi tempra incunt sit</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit volupta....</p>
+						<p class="date">24 Nov 2018.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
+				<h3 class="footer-title text-uppercase mb-4">Contact Us</h3>
+				<div class="contact-info">
+					<div class="footer-style-w3ls">
+						<h4 class="mb-2"> <span class="fa mr-1 fa-map-marker"></span> Location</h4>
+						<p>Marketing Agency, 5th cross, 4th building, New York City.</p>
+					</div>
+					<div class="footer-style-w3ls my-3">
+						<h4 class="mb-2"><span class="fa mr-1 fa-phone"></span> Phone</h4>
+						<p>+121 098 8907 9987</p>
+					</div>
+					<div class="footer-style-w3ls">
+						<h4 class="mb-2"><span class="fa mr-1 fa-envelope-open"></span> Email</h4>
+						<p><a href="mailto:info@example.com">info@example.com</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-sm-6 footer-grid-wthree mt-lg-0 mt-sm-5 mt-4">
+				<h3 class="footer-title text-uppercase mb-4">Quick Links</h3>
+				<ul class="links list-unstyled">
+					<li>
+						<a class="" href="#home"> Home</a>
+					</li>
+					<li>
+						<a class="" href="#about"> About Us</a>
+					</li>
+					<li>
+						<a class="" href="#"> Services</a>
+					</li>
+					<li>
+						<a class="" href="#">Process</a>
+					</li>
+					<li>
+						<a class="" href="#">Portfolio</a>
+					</li>
+					<li>
+						<a class="" href="contact/">Contact us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- //footer -->
+
+<!-- copyright -->
+<div class="copy-right-top border-top">
+	<p class="copy-right text-center py-4">&copy; 2019 Digital. All Rights Reserved | Design by
+		<a href="http://w3layouts.com/"> W3layouts </a>
+	</p>
+</div>
+<!-- //copyright -->
+
+<!-- move top -->
+<div class="move-top text-right">
+	<a href="#home" class="move-top"> 
+		<span class="fa fa-angle-up  mb-3" aria-hidden="true"></span>
+	</a>
+</div>
+<!-- move top -->
+	
+<!-- popup for login -->
+<div id="popup3" class="popup-effect">
+	<div class="popup">
+		<div class="login px-sm-4 mx-auto mw-100">
+			<h5 class="text-center mb-4">Login to Digital</h5>
+			<form action="#" method="post">
+				<div class="form-group">
+					<label class="mb-2">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+					<label class="mb-2">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+				</div>
+				<button type="submit" class="btn btn-primary submit mt-2">Login</button>
+				<p class="text-center mt-2">
+					<a href="#popup4"> Don't have an account?</a>
+				</p>
+			</form>
+		</div>
+
+		<a class="close" href="#">&times;</a>
+	</div>
+</div>
+<!-- //popup for login -->
+
+<!-- popup for register -->
+<div id="popup4" class="popup-effect">
+		<div class="popup">
+			<div class="login px-sm-4 mx-auto mw-100">
+				<h5 class="text-center mb-4">Register Now</h5>
+				<form action="/registrationform/" method="post">
+					{% csrf_token %}
+					<div class="form-group">
+						<label>Full Name</label>
+						<input name="full_name" type="text" class="form-control" id="validationDefault01" placeholder="" required="">
+					</div>
+					<div class="form-group">
+						<label>Email Address</label>
+						<input name="email" type="email" class="form-control" id="validationDefault02" placeholder="" required="">
+					</div>
+					<div class="form-group">
+						<label class="mb-2">Password</label>
+						<input name="password" type="password" class="form-control" id="password1" placeholder="" required="">
+					</div>
+					<div class="form-group">
+						<label>Confirm Password</label>
+						<input name="conpass" type="password" class="form-control" id="password2" placeholder="" required="">
+					</div>
+	
+					<button type="submit" class="btn btn-primary submit">Register</button>
+					<p class="text-center mt-3">
+						<a href="#">By clicking Register, I agree to your terms</a>
+					</p>
+				</form>
+			</div>
+			<a class="close" href="#">&times;</a>
+		</div>
+	</div>
+<!-- //popup for register -->
+
+</body>
+</html>

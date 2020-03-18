@@ -1,0 +1,84 @@
+{% extends "developer/index.html" %}
+{% load static %}
+
+            {% block content %}
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                            <div class="col-md-12">
+                                <!-- DAT    A TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <tr>
+                                                <th>projectname</th>
+                                                <th>Download Data</th>
+                                                <th>Client Detail</th>
+                                                <th>price</th>
+                                                <th>days</th>
+                                                <th>Upload Project</th>
+                                                <th>Date Time</th>
+                                            </tr>
+                                        </thead>
+                                         <tbody>
+                                             
+                                            {% for t in tbl %}
+                                            <tr>
+                                                <td><a href="/descpopupd/{{ t.pid_id }}/#popup4">{{ t.pid.projname }}</a>
+                                                    </td>
+                                                <td><span class="block-email">
+                                                    <a href="/export_project/{{ t.pid_id }}/">Download File</a>
+                                                </span></td>
+                                                <td><span class="block-email">
+                                                    <a href="/descpopupcli/{{ t.pid_id }}/#popup5">{{t.pid.cid.username}}</a>
+                                                </span></td>
+                                                <td class="process">{{t.price}}</td>
+                                                <td>{{t.days}}</td>
+                                                <td><span class="block-email">
+                                                    <a href="/popupupload/{{ t.pid_id }}/#popupupload">Upload File</a>
+                                                </span></td>
+                                                <td>{{t.date_time}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="popupupload" class="popup-effect div">
+        <div class="popup">
+            <div class="login px-sm-4 mx-auto mw-100">
+                <h5 class="text-center mb-4">Bidding</h5>
+                <form action="/upprojfile/{{ id }}/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        
+                        <label class="mb-2">File</label>
+                        <input name="file" type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+                        <small id="emailHelp" class="form-text text-muted">Upload rar or zip Project File.</s    mall>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit mt-2" >Upload</button>
+                    
+                </form>
+            </div>
+    
+            <a class="close" href="#">&times;</a>
+        </div>
+    </div>
+{% endblock %}

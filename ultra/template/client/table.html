@@ -1,0 +1,51 @@
+{% extends "developer/index.html" %}
+{% load static %}
+
+            {% block content %}
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                            <div class="col-md-12">
+                                <!-- DAT    A TABLE-->
+                                <div class="table-responsive m-b-40">
+                                    <table class="table table-borderless table-data3">
+                                        <thead>
+                                            <tr>
+                                                <th>projectname</th>
+                                                <th>price</th>
+                                                <th>days</th>
+                                                <th>date_time</th>
+                                            </tr>
+                                        </thead>
+                                         <tbody>
+                                             
+                                            {% for t in tbl %}
+                                            <tr>
+                                                <td>{{t.pid.projname}}</td>
+                                                <td class="process">{{t.price}}</td>
+                                                <td>{{t.days}}</td>
+                                                <td>{{t.date_time}}</td>
+                                            </tr>
+                                            {% endfor %}
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END DATA TABLE-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2019 UPH. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}
